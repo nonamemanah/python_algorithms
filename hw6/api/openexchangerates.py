@@ -1,9 +1,7 @@
 import requests
-
 from api.BaseApi import BaseApi
 from business_objects import Currency
 import json
-from operator import attrgetter
 
 
 class OpenExchangeRatesApi(BaseApi):
