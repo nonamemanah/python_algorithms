@@ -3,9 +3,9 @@ from api.openexchangerates import OpenExchangeRatesApi
 
 def main():
     api = OpenExchangeRatesApi()
-    api.load_currencies()
+    api.load()
 
-    for item in api.currencies:
+    for item in api.sorted_currency:
         print(item)
 
 
